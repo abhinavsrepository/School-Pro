@@ -22,11 +22,11 @@ const templates = [
         ]
     },
     {
-        name:"Blog Title",
-        desc:"An AI tool thst generate blog title depend on your blog information",
-        category:"Blog",
+        name:"Youtube Title",
+        desc:"An AI tool that will produce youtube title",
+        category:"Title",
         icon:'BlogIcon',
-        aiPrompt:'Give me 5 blog topicidea in bullet wise only based on give niche topic and give me result in Rich text editor format',
+        aiPrompt:'Give me 5 Tiltle topic idea in bullet wise only based on give niche topic and give me result in Rich text editor format',
         slug:'generate-blog-title', 
         form:[
             {
