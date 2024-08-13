@@ -25,7 +25,7 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#704ef8",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -33,7 +33,7 @@ const config = {
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "#884A39",
+          DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
@@ -78,7 +78,3 @@ const config = {
 } satisfies Config
 
 export default config
-//884A39 red
-//C38154 orange
-//FFC26F yellow
-//F9E0BB light yellow
