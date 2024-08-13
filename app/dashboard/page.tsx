@@ -1,5 +1,6 @@
 import React from 'react'
 import SearchSection from './_components/SearchSection'
+import TemplateListSection from './_components/TemplateListSection'
 
 function Dashboard() {
   return (
@@ -7,8 +8,9 @@ function Dashboard() {
       
       {/* Search Section */}
       <SearchSection/>
-      
+
       {/* Temlate List Section */}
+      <TemplateListSection/>
     </div>
   )
 }

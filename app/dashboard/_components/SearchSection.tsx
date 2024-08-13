@@ -8,10 +8,10 @@ function SearchSection() {
       <p className="text-white text-pretty">
         What woud you like to create today?
       </p>
-      <div className="w-full flex items-center">
-        <div className="flex gap-2 items-center p-2 border rounded-md my-5 w-[30%] ">
+      <div className="w-full flex justify-center">
+        <div className="flex gap-2 items-center p-2 border rounded-md my-5 w-[50%] ">
           <Search className="text-primary" />
-          <input type="text" placeholder="Search" className="bg-transparent w-full outline-none" />
+          <input type="text" placeholder="Search" className="bg-transparent w-full outline-none text-black border-white" />
         </div>
       </div>
     </div>
