@@ -1,27 +1,27 @@
 import Image from 'next/image'
 import React from 'react'
-import { HomeIcon, FileClockIcon } from 'lucide-react'
+import {FileClock, Home, Settings, WalletCards} from 'lucide-react'
 function SideNav() {
 
   const MenuList=[
     {
       name:"Home",
-      icon:"Home",
+      icon:Home,
       path:"/dashboard"
     },
     {
       name:"History",
-      icon:"FileClock",
+      icon:FileClock,
       path:"/dashboard/history"
     },
     {
       name:"Billing",
-      icon:"WalletCards",
+      icon:WalletCards,
       path:"/dashboard/billing"
     },
     {
       name:"Setting",
-      icon:"Settings",
+      icon:Settings,
       path:"/dashboard/setting"
     },
   ]
@@ -30,10 +30,11 @@ function SideNav() {
       <div className='flex justify-center '>
       <Image src={'/logo.svg'} alt='logo' width={100} height={100}/>
       </div>
-      <div>
+      <hr className='my-5 border'/>
+      <div className='mt-6'>
         
         {MenuList.map((menu,index)=>(
-          <div key={index}>
+          <div key={index} className="flex gap-2 mb-2 p-3 hover:bg-primary hover:text-white rounded-lg cursor-pointer">
           <menu.icon/>
           <h2>{menu.name}</h2>
           </div>
