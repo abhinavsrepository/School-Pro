@@ -31,12 +31,12 @@ function SideNav() {
     console.log(path);
   }, []);
   return (
-    <div className="h-screen p-5 shadow-sm border">
+    <div className="h-screen p-5 shadow-sm border bg-white">
       <div className="flex justify-center ">
-        <Image src={"/logo.svg"} alt="logo" width={100} height={100} />
+        <Image src={"/logo.svg"} alt="logo" width={120} height={100} />
       </div>
-      <hr className="my-5 border" />
-      <div className="mt-6">
+      <hr className="my-6 border" />
+      <div className="mt-3">
         {MenuList.map((menu, index) => (
           <div
             key={index}

@@ -7,7 +7,7 @@ function layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (<div>
+  return (<div className="bg-slate-100 h-screen">
     <div className="md:w-64 md:block fixed"><SideNav/></div>
     <div className="md:ml-64">
       <Header/>
