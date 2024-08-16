@@ -19,7 +19,7 @@ function CreateNewContent (props:PROPS) {
 
    }
   return (
-    <div>
+    <div className='p-10'>
       <Link href={"/dashboard"}>
       <Button ><ArrowLeft/>Back</Button>
       </Link>
