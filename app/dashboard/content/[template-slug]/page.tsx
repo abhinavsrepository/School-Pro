@@ -16,7 +16,7 @@ function CreateNewContent (props:PROPS) {
       {/* FormSection */}
       <FormSection selectedTemplate={selectedTemplate}/>
     {/* outsection */}
-    <div className='col-span-2'>
+    <div className='col-span-3'>
     <OutputSection/>
     </div>
     </div>
