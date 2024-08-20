@@ -28,9 +28,7 @@ function layout({
           <Header/>
         {children}
         </div>
-      <div>
-      <script data-name="BMC-Widget" data-cfasync="false" src="" data-id="" data-description="" data-message= , If you like this app" data-color="#BD5FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
-      </div>
+      
     </div>
     </UpdateCreditUsageContext.Provider>
     </UserSubscriptionContext.Provider>
