@@ -4,15 +4,14 @@ import SearchSection from './_components/SearchSection'
 import TemplateListSection from './_components/TemplateListSection'
 
 function Dashboard() {
-  const [userSearchInput ,setUserSearchInput] = useState<string>()
+  const [userSearchInput,setUserSearchInput]=useState<string>()
   return (
     <div>
-      
-      {/* Search Section */}
-      <SearchSection onSearchInput={(value:string)=>setUserSearchInput(value)}/>
+        {/* Search Section  */}
+        <SearchSection onSearchInput={(value:string)=>setUserSearchInput(value)} />
 
-      {/* Temlate List Section */}
-      <TemplateListSection userSearchInput={userSearchInput}/>
+        {/* Template List Section  */}
+        <TemplateListSection userSearchInput={userSearchInput} />
     </div>
   )
 }
