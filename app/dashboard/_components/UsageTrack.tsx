@@ -4,7 +4,7 @@ import { db } from '@/utils/db';
 import { AIOutput, UserSubscription } from '@/utils/schema';
 import { useUser } from '@clerk/nextjs';
 
-import { eq } from 'drizzle-orm';
+// import { eq } from 'drizzle-orm';
 import React, { useContext, useEffect, useState } from 'react'
 import { HISTORY } from '../history/page';
 import { TotalUsageContext } from '@/app/(context)/TotalUsageContext';
@@ -16,7 +16,7 @@ import { UpdateCreditUsageContext } from '@/app/(context)/UpdateCreditUsageConte
     const {user}=useUser();
     const {totalUsage,setTotalUsage}=useContext(TotalUsageContext)
     const {userSubscription,setUserSubscription}=useContext(UserSubscriptionContext);
-    const [maxWords,setMaxWords]=useState(1000000)
+    const [maxWords,setMaxWords]=useState(10000)
     const {updateCreditUsage,setUpdateCreditUsage}=useContext(UpdateCreditUsageContext);
     useEffect(()=>{
         user&&GetData();
